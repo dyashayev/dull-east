@@ -1,4 +1,4 @@
-package Main;
+package duel;
 
 
 
@@ -38,7 +38,15 @@ public class Duel {
 		d1.setStartingHP(dueler1HP);
 		d2.setStartingHP(dueler2HP);
 		
+
+		boolean d1SaysD2Fair = d1.determineIfOpponentIsFair(d2, 100);
+		boolean d2SaysD1Fair = d2.determineIfOpponentIsFair(d1, 100);
+		
+
+		
 	}
+	
+	
 	
 	/**
 	 * This method involves "Threads" which we will get to much later in the year, essentially, it
@@ -52,5 +60,6 @@ public class Duel {
 			e.printStackTrace();
 		}
 	}
+
 
 }
