@@ -52,9 +52,5 @@ public class Duel {
 			e.printStackTrace();
 		}
 	}
-	public void taunt() {
-	
-		System.out.println(taunt);
-	}
 
 }
