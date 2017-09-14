@@ -1,5 +1,17 @@
 package Main;
 
-public class CharacterB {
+public class CharacterB implements Dueler{
 
+	public CharacterB() {
+	}
+	
+	public String getName(){
+		return "Star PLatinum";
+	}
+	
+	public void taunt() {
+		System.out.println("Omae Wa Mou Shindeiru!");
+	}
+	
+	
 }
