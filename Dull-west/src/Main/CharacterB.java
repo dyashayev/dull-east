@@ -3,7 +3,6 @@ package Main;
 public class CharacterB implements Dueler{
 
 	public CharacterB() {
-		//anime
 	}
 	
 	public String getName(){
@@ -14,5 +13,9 @@ public class CharacterB implements Dueler{
 		System.out.println("Omae Wa Mou Shindeiru!");
 	}
 	
+	public void getHP(int hp) {
+		this.hp = hp;
+	}
 	
+	boolean determineIfOpponentIsFair(Dueler d, int hp);
 }
