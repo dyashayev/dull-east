@@ -2,6 +2,8 @@ package Main;
 
 public class CharacterB implements Dueler{
 
+	private int hp;
+	
 	public CharacterB() {
 	}
 	
@@ -17,5 +19,12 @@ public class CharacterB implements Dueler{
 		this.hp = hp;
 	}
 	
-	boolean determineIfOpponentIsFair(Dueler d, int hp);
+	boolean determineIfOpponentIsFair(Dueler d, int hp) {
+		
+	}
+	
+	int getAction(Object caller);
+
+	void hit(Object caller);
+
 }
