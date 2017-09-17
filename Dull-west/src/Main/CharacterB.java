@@ -15,16 +15,27 @@ public class CharacterB implements Dueler{
 		System.out.println("Omae Wa Mou Shindeiru!");
 	}
 	
-	public void getHP(int hp) {
+	public void setStartingHP(int hp) {
 		this.hp = hp;
 	}
 	
-	boolean determineIfOpponentIsFair(Dueler d, int hp) {
-		
+	public int getHP() {
+		return hp;
 	}
 	
-	int getAction(Object caller);
+	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
+		if(d.getHP() == hp) {
+			return true;
+		}
+		return false;
+	}
+	
+	public int getAction(Object caller) {
+		
+	}
 
-	void hit(Object caller);
+	public void hit(Object caller) {
+		
+	}
 
 }
