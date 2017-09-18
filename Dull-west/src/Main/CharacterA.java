@@ -22,7 +22,7 @@ public class CharacterA implements Dueler {
 		return hp;
 	}
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-		
+		return d.getHP() == hp;
 	}
 	public int getAction(Object caller) {
 		
