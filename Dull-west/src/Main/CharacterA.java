@@ -17,9 +17,9 @@ public class CharacterA implements Dueler {
 		if(randomNumber == 0)
 			System.out.println("You Best Skedaddle");
 		if(randomNumber == 1)
-			System.out.println("");
+			System.out.println("You Best Skemomal");
 		if(randomNumber == 2)
-			System.out.println("");
+			System.out.println("Is that a Jojo reference?!");
 	}
 	public void setStartingHP(int hp) {
 		this.hp = hp;
