@@ -11,7 +11,8 @@ public class CharacterA implements Dueler {
 	public String getName() {
 		return "The winner";
 	}
-	
+	//test
+
 	public void taunt() {
 		double randomNumber = Math.random() * 3;
 		if(randomNumber == 0)
