@@ -13,7 +13,13 @@ public class CharacterA implements Dueler {
 	}
 	
 	public void taunt() {
-		System.out.println("You Best Skedaddle");
+		double randomNumber = Math.random() * 3;
+		if(randomNumber == 0)
+			System.out.println("You Best Skedaddle");
+		if(randomNumber == 1)
+			System.out.println("");
+		if(randomNumber == 2)
+			System.out.println("");
 	}
 	public void setStartingHP(int hp) {
 		this.hp = hp;
