@@ -8,11 +8,17 @@ public class CharacterB implements Dueler{
 	}
 	
 	public String getName(){
-		return "Star PLatinum";
+		return "Jotaro Kujo";
 	}
 	
 	public void taunt() {
-		System.out.println("Omae Wa Mou Shindeiru!");
+		double randomNumber = Math.random() * 3;
+		if(randomNumber == 0)
+			System.out.println("Omai Wa Mou Shindeiru");
+		if(randomNumber == 1)
+			System.out.println("Sabaku No Ore Wa Stando Da");
+		if(randomNumber == 2)
+			System.out.println("Yare Yare Daze");
 	}
 	
 	public void setStartingHP(int hp) {
