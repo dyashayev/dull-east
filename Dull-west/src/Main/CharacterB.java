@@ -31,7 +31,7 @@ public class CharacterB implements Dueler{
 	}
 	
 	public int getAction(Object caller) {
-		
+
 	}
 
 	public void hit(Object caller) {
