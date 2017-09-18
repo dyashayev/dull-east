@@ -18,7 +18,7 @@ public class CharacterB implements Dueler{
 		if(randomNumber == 1)
 			System.out.println("Sabaku No Ore Wa Stando Da");
 		if(randomNumber == 2)
-			System.out.println("");
+			System.out.println("Yare Yare Daze");
 	}
 	
 	public void setStartingHP(int hp) {
