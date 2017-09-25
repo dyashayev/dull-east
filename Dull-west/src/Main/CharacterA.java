@@ -14,12 +14,12 @@ public class CharacterA implements Dueler {
 	//test
 
 	public void taunt() {
-		double randomNumber = Math.random() * 3;
-		if(randomNumber == 0)
+		double randomNumber = Math.random();
+		if(randomNumber > .66)
 			System.out.println("You Best Skedaddle");
-		if(randomNumber == 1)
+		if(randomNumber < .33)
 			System.out.println("You Best Skemomal");
-		if(randomNumber == 2)
+		if(randomNumber >= .33 && randomNumber <= .66)
 			System.out.println("Is that a Jojo reference?!");
 	}
 	public void setStartingHP(int hp) {
@@ -32,9 +32,24 @@ public class CharacterA implements Dueler {
 		return d.getHP() == hp;
 	}
 	public int getAction(Object caller) {
-		
+		boolean loaded = false;
+		double danRom = Math.random();
+			if(danRom > .5) {
+				if(loaded == true)
+					return 1;
+				else {
+					return 0;
+				}
+			}
+			else {
+				if(danRom <= .5 && danRom > .25)
+					return 2;
+				else {
+					return 3;
+				}
+			}
 	}
 	public void hit(Object caller) {
-		
+		this.hp = this.hp - 10;
 	}
 }
