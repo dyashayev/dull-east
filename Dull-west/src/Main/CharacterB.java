@@ -42,7 +42,7 @@ public class CharacterB implements Dueler{
 			return 3;
 		}
 		double randomAct = Math.random();
-			if(randomAct > .5) {
+			if(randomAct > .66) {
 				if(loaded) {
 					loaded = false;
 					return 1;
