@@ -3,6 +3,7 @@ package Main;
 public class CharacterA implements Dueler {
 	
 	private int hp;
+	private boolean 
 	
 	public CharacterA() {
 		
