@@ -34,8 +34,10 @@ public class CharacterA implements Dueler {
 	public int getAction(Object caller) {
 		double danRom = Math.random();
 			if(danRom > .5) {
-				if(loaded)
+				if(loaded) {
+					loaded = false;
 					return 1;
+				}
 				else {
 					loaded = true;
 					return 0;
