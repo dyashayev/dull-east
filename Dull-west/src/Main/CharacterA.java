@@ -35,7 +35,7 @@ public class CharacterA implements Dueler {
 		if(caller instanceof Dueler)
 			return 3;
 		double danRom = Math.random();
-			if(danRom > .5) {
+			if(danRom > .25) {
 				if(loaded) {
 				
 					loaded = false;
