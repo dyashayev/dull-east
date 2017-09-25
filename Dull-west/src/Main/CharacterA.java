@@ -37,6 +37,7 @@ public class CharacterA implements Dueler {
 				if(loaded)
 					return 1;
 				else {
+					loaded = true;
 					return 0;
 				}
 			}
