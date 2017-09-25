@@ -11,7 +11,7 @@ public class CharacterA implements Dueler {
 	public String getName() {
 		return "The winner";
 	}
-	
+	//plz
 	public void taunt() {
 		double randomNumber = Math.random();
 		if(randomNumber > .66)
