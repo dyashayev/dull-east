@@ -37,13 +37,17 @@ public class CharacterB implements Dueler{
 	}
 	
 	public int getAction(Object caller) {
-		double randomAction = Math.random();
-			if(randomAction > .66)
+		double randomAct = Math.random();
+			if(randomAct > .66) {
 				return 0;
-			if(randomAction < .66 && randomAction > .33)
+			}
+			if(randomAct < .66 && randomAct > .33) {
 				return 1;
-			if(randomAction < .33)
+			}
+			if(randomAct < .33) {
 				return 2;
+			}
+			return 3;
 	}
 
 	public void hit(Object caller) {
