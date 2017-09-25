@@ -52,11 +52,11 @@ public class CharacterB implements Dueler{
 				return 0;
 				}
 			}
-			return 2;
+		return 2;
 	}
 			
 	public void hit(Object caller) {
 		this.hp = this.hp - 10;
 	}
-
+	//something
 }
