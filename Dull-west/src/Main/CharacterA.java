@@ -3,7 +3,7 @@ package Main;
 public class CharacterA implements Dueler {
 	
 	private int hp;
-	private boolean 
+	private boolean loaded = false;
 	
 	public CharacterA() {
 		
@@ -34,7 +34,7 @@ public class CharacterA implements Dueler {
 	public int getAction(Object caller) {
 		double danRom = Math.random();
 			if(danRom > .5) {
-				if(danRom <= 1 && danRom > .5)
+				if(loaded)
 					return 1;
 				else {
 					return 0;
