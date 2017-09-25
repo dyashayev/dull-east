@@ -4,6 +4,7 @@ public class CharacterB implements Dueler{
 
 	private int hp;
 	private boolean loaded = false;
+	private boolean round = false;
 	
 	public CharacterB() {
 	}
@@ -40,6 +41,11 @@ public class CharacterB implements Dueler{
 	public int getAction(Object caller) {
 		if(caller instanceof Dueler) {
 			return 3;
+		}
+		if(!round) {
+			loaded = true;
+			round = true;
+			return 0;
 		}
 		double randomAct = Math.random();
 			if(randomAct > .66) {
