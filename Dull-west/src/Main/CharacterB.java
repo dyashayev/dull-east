@@ -40,7 +40,7 @@ public class CharacterB implements Dueler{
 		double randomAction = Math.random();
 			if(randomAction > .66)
 				return 0;
-			if(randomAction < .66 && randomNumber > .33)
+			if(randomAction < .66 && randomAction > .33)
 				return 1;
 			if(randomAction < .33)
 				return 2;
