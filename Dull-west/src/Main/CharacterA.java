@@ -32,7 +32,7 @@ public class CharacterA implements Dueler {
 		return d.getHP() == hp;
 	}
 	public int getAction(Object caller) {
-		if(!(caller instanceof Dueler))
+		if(caller instanceof Dueler)
 			return 3;
 		double danRom = Math.random();
 			if(danRom > .5) {
