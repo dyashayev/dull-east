@@ -64,5 +64,5 @@ public class CharacterB implements Dueler{
 	public void hit(Object caller) {
 		this.hp = this.hp - 10;
 	}
-	//something
+	
 }
