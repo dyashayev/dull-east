@@ -12,12 +12,12 @@ public class CharacterB implements Dueler{
 	}
 	
 	public void taunt() {
-		double randomNumber = Math.random() * 3;
-		if(randomNumber == 0)
+		double randomNumber = Math.random();
+		if(randomNumber > .66)
 			System.out.println("Omai Wa Mou Shindeiru");
-		if(randomNumber == 1)
+		if(randomNumber < .66 && randomNumber > .33)
 			System.out.println("Sabaku No Ore Wa Stando Da");
-		if(randomNumber == 2)
+		if(randomNumber < .33)
 			System.out.println("Yare Yare Daze");
 	}
 	
@@ -37,11 +37,17 @@ public class CharacterB implements Dueler{
 	}
 	
 	public int getAction(Object caller) {
-
+		double randomAction = Math.random();
+			if(randomAction > .66)
+				return 0;
+			if(randomAction < .66 && randomAction > .33)
+				return 1;
+			if(randomAction < .33)
+				return 2;
 	}
 
 	public void hit(Object caller) {
-		
+		this.hp = this.hp - 10;
 	}
 
 }
