@@ -32,24 +32,22 @@ public class CharacterA implements Dueler {
 		return d.getHP() == hp;
 	}
 	public int getAction(Object caller) {
+		if(!(caller instanceof Dueler))
+			return 3;
 		double danRom = Math.random();
 			if(danRom > .5) {
 				if(loaded) {
+				
 					loaded = false;
 					return 1;
 				}
-				else {
+				else 
+				{
 					loaded = true;
 					return 0;
 				}
 			}
-			else {
-				if(danRom <= .5 && danRom > .25)
-					return 2;
-				else {
-					return 3;
-				}
-			}
+			return 2;
 	}
 	public void hit(Object caller) {
 		this.hp = this.hp - 10;
